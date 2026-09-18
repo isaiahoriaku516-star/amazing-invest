@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazing Invest</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033}
+header{background:#102a43;color:white;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.logo{font-size:22px;font-weight:800}
+nav{display:flex;gap:20px}
+nav a{color:white;text-decoration:none}
+.menu{display:none;font-size:25px}
+.hero{padding:70px 6%;text-align:center;background:linear-gradient(135deg,#102a43,#1f6f8b);color:white}
+.hero h1{font-size:42px;margin:0 0 15px}
+.hero p{max-width:650px;margin:0 auto 25px;line-height:1.6}
+.btn{display:inline-block;padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:700;margin:5px}
+.primary{background:white;color:#102a43}
+.secondary{border:1px solid white;color:white}
+section{padding:50px 6%;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border-radius:14px;padding:25px;box-shadow:0 5px 20px #00000010}
+.card h3{margin-top:0}
+footer{background:#102a43;color:white;text-align:center;padding:30px 6%;margin-top:30px}
+@media(max-width:700px){
+ nav{display:none;position:absolute;top:64px;left:0;right:0;background:#102a43;flex-direction:column;padding:18px 6%}
+ nav.show{display:flex}
+ .menu{display:block}
+ .hero{padding:55px 6%}
+ .hero h1{font-size:32px}
+ .cards{grid-template-columns:1fr}
+ section{padding:40px 5%}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Amazing Invest</div>
+<div class="menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
+<nav>
+<a href="#home">Home</a><a href="#plans">Plans</a><a href="#how">How It Works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<h1>Welcome to Amazing Invest</h1>
+<p>A mobile-friendly financial platform prototype designed to help users learn about investing and track their investment information.</p>
+<a class="btn primary" href="#plans">Explore Plans</a>
+<a class="btn secondary" href="#how">How It Works</a>
+</section>
+
+<section id="plans">
+<h2>Investment Plans</h2>
+<div class="cards">
+<div class="card"><h3>Starter</h3><p>Learn about the basics of investing and financial planning.</p></div>
+<div class="card"><h3>Growth</h3><p>Explore how different investment strategies work and their risks.</p></div>
+<div class="card"><h3>Premium</h3><p>Review advanced educational information and portfolio concepts.</p></div>
+</div>
+</section>
+
+<section id="how">
+<h2>How It Works</h2>
+<div class="cards">
+<div class="card"><h3>1. Create an account</h3><p>Set up your profile and keep your information organized.</p></div>
+<div class="card"><h3>2. Learn & track</h3><p>Review investment information and track your test portfolio.</p></div>
+<div class="card"><h3>3. Make informed decisions</h3><p>Understand potential returns and risks before using real money.</p></div>
+</div>
+</section>
+
+<section id="faq">
+<h2>FAQ</h2>
+<div class="card"><h3>Is this a real-money investment service?</h3><p>This first version is an educational prototype. Real-money deposits and withdrawals are not enabled.</p></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card"><p>Email: support@amazinginvest.example</p><p>We're building the platform step by step.</p></div>
+</section>
+</main>
+
+<footer>© 2026 Amazing Invest · Educational prototype</footer>
+</body>
+</html>
